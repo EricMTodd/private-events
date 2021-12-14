@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <head>
+      <div class="nav"></div>
+      <div class="flash">
+        <div class="alert"><%= flash[:alert] %></div>
+        <div class="notice"><%= flash[:notice] %></div>
+      </div>
+      <div class="sessions"></div>
+    </head>
+    <main>
+      <%= yield %>
+    </main>
+    <footer></footer>
   </body>
 </html>
